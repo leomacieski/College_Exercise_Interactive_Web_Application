@@ -15,8 +15,8 @@ router.get('/', function(req, res) {
 
     res.writeHead(200, {'Content-Type' : 'text/html'}); //Tell the user that the resource exists and which type that is
 
-    let xml = fs.readFileSync('PaddysCafe.xml', 'utf8'), //read in the XML file
-        xsl = fs.readFileSync('PaddysCafe.xsl', 'utf8'); //read in the XSL file
+    let xml = fs.readFileSync('PaddyCafe.xml', 'utf8'), //read in the XML file
+        xsl = fs.readFileSync('PaddyCafe.xsl', 'utf8'); //read in the XSL file
 
     console.log(xml);
     console.log(xsl);
