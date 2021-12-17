@@ -36,8 +36,8 @@ router.get('/get/html', function(req, res) {
     let xml = fs.readFileSync('PaddyCafe.xml', 'utf8'), //read in the XML file
         xsl = fs.readFileSync('PaddyCafe.xsl', 'utf8'); //read in the XSL file
 
-    console.log(xml);
-    console.log(xsl);
+   // console.log(xml);
+    //console.log(xsl);
 
     let doc = xmlParse(xml), //Parse the XML file
         stylesheet = xmlParse(xsl); //Parse the XSL file
